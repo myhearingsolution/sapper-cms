@@ -1,0 +1,18 @@
+{
+  "name": "@sapper-cms/react-svelte-bridge",
+  "version": "0.1.0",
+  "description": "Components to support mouniting Svelte components in a React application.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "eslint {src,test}/**/*.{ts,tsx,svelte}",
+    "fix": "eslint --fix {src,test}/**/*.{ts,tsx,svelte}"
+  },
+  "author": "Ben Cates <ben.cates@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "typescript": "^4.1.2"
+  }
+}

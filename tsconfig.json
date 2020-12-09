@@ -5,6 +5,7 @@
     "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "sourceMap": true,
+    "declaration": true,
     "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,

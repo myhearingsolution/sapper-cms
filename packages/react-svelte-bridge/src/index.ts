@@ -1,1 +1,1 @@
-export default 'Hello, World!'
+export { default as wrapSvelteComponent } from './wrap-svelte-component'

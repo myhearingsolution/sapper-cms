@@ -6,10 +6,10 @@ import type { SvelteComponent as SvelteComponentInstance } from 'svelte'
 
 type SvelteComponentClass = typeof SvelteComponentInstance
 
-function wrapSvelteComponent(
+function wrapSvelteComponent<Props = unknown>(
   SvelteComponent: SvelteComponentClass,
-): React.ComponentClass {
-  return createClass({
+): React.ComponentClass<Props> {
+  return createClass<Props, { svelteComponent: SvelteComponentInstance }>({
     render() {
       return <div ref={(div: Element) => (this.div = div)} />
     },
